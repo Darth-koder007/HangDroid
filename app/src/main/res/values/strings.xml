@@ -3,4 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_game">GameActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_game_over">gameOverActivity</string>
+    <string name="title_activity_activity_multiplayer">activity_multiplayer</string>
+    <string name="title_activity_game_multi">GameMulti</string>
+    <string name="title_activity_scores">ScoresActivity</string>
 </resources>

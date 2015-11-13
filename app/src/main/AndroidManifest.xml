@@ -23,6 +23,26 @@
             android:label="@string/title_activity_game"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".gameOverActivity"
+            android:label="@string/title_activity_game_over"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity_multiplayer"
+            android:label="@string/title_activity_activity_multiplayer"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".GameMulti"
+            android:label="@string/title_activity_game_multi"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ScoresActivity"
+            android:label="@string/title_activity_scores"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

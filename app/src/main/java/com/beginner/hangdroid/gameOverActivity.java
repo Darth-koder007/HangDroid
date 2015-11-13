@@ -1,37 +1,26 @@
 package com.beginner.hangdroid;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.Window;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class gameOverActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_game_over);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        int points = getIntent().getIntExtra("POINTS_IDENTIFIER",0);
+        TextView textViewPoints = (TextView) findViewById(R.id.TextScore);
+        textViewPoints.setText(String.valueOf(points)+" POINTS");
 
     }
 
-  public void startSinglePlayerGame(View view){
-
-      Intent myIntent = new Intent(this,GameActivity.class);
-      startActivity(myIntent);
-
-  }
-
-  public void startMultiPlayerGame(View v){
-      Intent myIntent = new Intent(this,activity_multiplayer.class);
-      startActivity(myIntent);
-  }
 }

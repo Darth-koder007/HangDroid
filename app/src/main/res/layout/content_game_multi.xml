@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.beginner.hangdroid.GameActivity"
-    tools:showIn="@layout/activity_game">
+    tools:context="com.beginner.hangdroid.GameMulti"
+    tools:showIn="@layout/activity_game_multi">
 
     <ImageView
         android:id="@+id/image_game"
@@ -33,33 +33,7 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
-        <TextView
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:text="_"
-            android:textSize="40sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:text="_"
-            android:textSize="40sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="_"
-            android:layout_marginRight="5dp"
-            android:textSize="40sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="_"
-            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -89,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="introduceLetter"
+            android:onClick="introduceLetterM"
             android:text="button" />
 
     </LinearLayout>
