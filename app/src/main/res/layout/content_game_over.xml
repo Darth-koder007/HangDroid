@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:text="Save Score"
             android:id="@+id/button"
-            android:onClick="introduceLetter"/>
+            android:onClick="saveScore"/>
 
         <EditText
             android:layout_width="fill_parent"

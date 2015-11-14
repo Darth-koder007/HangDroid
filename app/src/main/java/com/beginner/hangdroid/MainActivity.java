@@ -34,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
       Intent myIntent = new Intent(this,activity_multiplayer.class);
       startActivity(myIntent);
   }
+
+    public void OpenScores(View v){
+
+        Intent myIntent = new Intent(this,ScoresActivity.class);
+        startActivity(myIntent);
+    }
 }

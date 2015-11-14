@@ -513,6 +513,8 @@ public class GameActivity extends AppCompatActivity {
 
         ImageView imageView = (ImageView) findViewById(R.id.image_game);
         imageView.setImageResource(R.drawable.hangdroid_0);
+
+
     }
 
 
@@ -549,6 +551,7 @@ public class GameActivity extends AppCompatActivity {
             Intent gameOverIntent = new Intent(this, gameOverActivity.class);
             gameOverIntent.putExtra("POINTS_IDENTIFIER", mPoints);
             startActivity(gameOverIntent);
+            finish();
         }
     }
 
